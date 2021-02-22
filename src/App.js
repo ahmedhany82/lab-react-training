@@ -1,8 +1,8 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import IdCard from './IdCard';
-import Greetings from './Greetings';
+import IdCard from './Components/IdCard';
+import Greetings from './Components/Greetings';
 
 function App() {
   return (
