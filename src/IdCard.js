@@ -8,24 +8,25 @@ const IdCardStyle = {
     height: '20%',
     border: "thin solid black",
     padding: '10px',
-    margin: '10px'
+    margin: '10px',
+    fontSize: '16px'
 }
 
 const IdCardStyleText = {
-    marginLeft: '20px'
+    marginLeft: '20px',
+    textAlign: 'left'
 }
 
 const IdCard = (props) => {
-    console.log(props.birth.toDateString());
     return (
-        <div style={IdCardStyle}>
-        <img src={props.picture} style={{ width: '300px', height: '250px' }} alt=""/>
+    <div style={IdCardStyle}>
+        <img src={props.picture} style={{ width: '200px', height: '200px' }} alt=""/>
         <div style={IdCardStyleText}>
-            <h3>First name: {props.firstName}</h3>
-            <h3>Last name: {props.lastName}</h3>
-            <h3>Gender: {props.gender}</h3>
-            <h3>Height: {props.height}</h3>
-            <h3>Birth: {props.birth.toDateString()}</h3>
+            <p><strong>First name:</strong> {props.firstName}</p>
+            <p><strong>Last name:</strong> {props.lastName}</p>
+            <p><strong>Gender:</strong> {props.gender}</p>
+            <p><strong>Height:</strong> {props.height}</p>
+            <p><strong>Birth:</strong> {props.birth.toDateString()}</p>
         </div>
     </div>
     )
