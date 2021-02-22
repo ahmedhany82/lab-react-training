@@ -4,6 +4,7 @@ import './App.css';
 import IdCard from './Components/IdCard';
 import Greetings from './Components/Greetings';
 import Random from './Components/Random';
+import BoxColor from './Components/BoxColor';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         <h1 className="App-header">Random</h1>
         <Random min={1} max={6}/>
         <Random min={1} max={100}/>
+        <h1 className="App-header">BoxColor</h1>
+        <BoxColor r={255} g={0} b={0} />
+        <BoxColor r={128} g={255} b={0} />
     </div>
   );
 }
