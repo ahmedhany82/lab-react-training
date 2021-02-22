@@ -24,7 +24,6 @@ const Greetings = (props) => {
             greeting = "Bonjour";
             break;
     }
-    console.log(language)
     return (
         <div style={GreetingsStyle}>
             <p>{greeting} {props.children}</p>
