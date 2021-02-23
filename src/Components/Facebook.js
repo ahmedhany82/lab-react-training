@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import profiles from '../data/berlin.json';
 
-
 const cardStyle = {
     width: '300px',
     height: '160px',
