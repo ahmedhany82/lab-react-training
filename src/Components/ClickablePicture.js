@@ -17,7 +17,6 @@ export default class ClickablePicture extends Component {
 
 
     render() {
-        console.log(this.props.imgClicked)
         return (
             <div>
                 <img onClick={this.imageHandler} src={this.state.clicked ? this.props.imgClicked : this.props.img } alt="" 

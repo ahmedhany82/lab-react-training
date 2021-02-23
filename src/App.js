@@ -9,6 +9,7 @@ import Rating from './Components/Rating';
 import DriverCard from './Components/DriverCard';
 import LikeButton from './Components/LikeButton';
 import ClickablePicture from './Components/ClickablePicture';
+import Dice from './Components/Dice';
 
 function App() {
   return (
@@ -98,7 +99,8 @@ function App() {
         <ClickablePicture
           img='/img/persons/maxence.png'
           imgClicked='/img/persons/maxence-glasses.png'/>
-        <h1 className="App-header"></h1>
+        <h1 className="App-header">Dice</h1>
+        <Dice />
     </div>
   );
 }
