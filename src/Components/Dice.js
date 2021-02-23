@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 
 export default class Dice extends Component {
 
-    //In progress
-
     constructor(props) {
         super(props);
         this.state = {

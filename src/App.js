@@ -11,6 +11,7 @@ import LikeButton from './Components/LikeButton';
 import ClickablePicture from './Components/ClickablePicture';
 import Dice from './Components/Dice';
 import Carousel from './Components/Carousel';
+import NumbersTable from './Components/NumbersTable';
 
 function App() {
   return (
@@ -112,6 +113,7 @@ function App() {
           ]}
         />
         <h1 className="App-header">NumbersTable</h1>
+        <NumbersTable limit={12} />
     </div>
   );
 }
