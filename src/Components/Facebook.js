@@ -31,7 +31,7 @@ export default class Facebook extends Component {
     render() {
         const list = profiles.map( (profile, index) => {
             return (
-                <div style={ (this.state.selectedCountry == profile.country)? {...cardStyle, backgroundColor: 'lightblue'} : {...cardStyle} } key={index}>
+                <div style={ (this.state.selectedCountry == profile.country)? {...cardStyle, backgroundColor: 'lightblue'} : cardStyle } key={index}>
                     <img src={profile.img} alt="" style={{width: '150px', height: '150px'}}/>
                     <div style={{display: 'flex', flexDirection: 'column', marginLeft: '10px'}}>
                         <p style={{margin: '5px'}}><strong>First name: </strong>{profile.firstName}</p>
